@@ -52,9 +52,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         <CardTitle>
           <Image src={image} alt="course" height={200} className="w-full" />
         </CardTitle>
-        <CardDescription className="pl-2">
-          <p className="text-black">{title}</p>
-        </CardDescription>
+        <CardDescription className="pl-2 text-black">{title}</CardDescription>
       </CardHeader>
       <CardContent className={cn("pl-2")}>
         <p className="text-gray-500">{instructor}</p>

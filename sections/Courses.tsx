@@ -87,7 +87,7 @@ const Courses = () => {
       <h1 className="text-2xl font-bold py-4">Learners are viewing</h1>
       <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-col-2 gap-2">
         {courses.map((course, index) => (
-          <CourseCard key={index} {...course} />
+          <CourseCard key={index + 1} {...course} />
         ))}
       </div>
     </div>

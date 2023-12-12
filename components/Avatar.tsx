@@ -1,5 +1,6 @@
 "use client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 import { useState } from "react";
 import {
   Cloud,
@@ -82,9 +83,10 @@ export function AvatarDemo() {
           <DropdownMenuSeparator />
           <DropdownMenuItem>
             <LogOut className="mr-2 h-4 w-4" />
-            <span>Log out</span>
+            <span onClick={() => alert("logout")}>Log out</span>
             <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
           </DropdownMenuItem>
+          <DropdownMenuItem></DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
